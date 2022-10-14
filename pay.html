@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Transfer Successful</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="models">
+                <center>
+                    <img src="/img/tick-sign.png" alt="" width="50%">
+
+                    <p>Congratulation your transaction of <span id="was"></span> was Successful </p>
+                    <p>You can now Register your school and candidate</p>
+                    <a href="/signUp.html">Register</a>
+
+
+                </center>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="four">
+    <div class="col-md-12 func">
+        <div class="nav">
+            <h2 class=""><a href="/index.html">LumenVeritas</a>  </h2>
+            <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="/signUp.html">Register</a></li>
+                <li><a href="/login.html">Login</a></li>
+            </ul>
+        </div>
+        <div class="container pb-5">
+            <div class="row pb-3">
+                <div class="col-md-6 mt-5 pt-5">
+                    <img src="/img/Online-Payment-Illustration.png" alt="">
+                </div>
+                <div class="col-md-6">
+                  <div class="pay">
+                    <label for="">Card number</label> <br>
+                    <input type="number" placeholder="************" id="code"  > <br>
+                    <label for="">Expiry Date</label> <br>
+                    <input type="number" placeholder="month/year" id="moyear" > <br>
+                    <label for="">Cvv</label> <br>
+                    <input type="number" placeholder="cvv" id="cvv" > <br>
+                    <label for="">Pin</label> <br>
+                    <input type="number" placeholder="pin" > <br>
+                    <label for="">Amount You want to deposit</label> <br>
+                    <input type="number" placeholder="Amount" id="amount"> <br>
+                    <button id="pay">Complete Transaction</button>
+                  </div>
+                </div>
+            </div>
+           
+           <center>
+            <div class=" modalss " id="mode">
+                <div class="col-md-12 " >
+                    <button type="button" class="btn btn-light " data-bs-toggle="modal" id="details" data-bs-target="#exampleModal">
+                        Transfer Details  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text-fill" viewBox="0 0 16 16">
+                            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+                        </svg></button>
+                   </div>
+               </div>
+           </center>
+        </div>
+       
+    </div>
+   </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+   <script src="/js/pay.js"></script>
+</body>
+</html>
+
+  

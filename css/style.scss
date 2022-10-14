@@ -1,0 +1,674 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+$light:#fbf7ed;
+$dark:#004c3f;
+
+.selss{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // label{
+    //     margin: 0px 10px;
+    // }
+    input{
+        margin-right: 5px;
+    }
+}
+
+.first{
+    height: 100%;
+    background-color: $light;
+    background-image: url(/img/injl33v9myl51.webp);
+    .func{background-image: linear-gradient(to top, #fbf7edbd, #fbf7edd3)}
+    p{font-size: 20px;line-height: 25px;}
+    // h1{text-transform: uppercase;font-weight: 600;text-align: center;color: $light;background-color: $dark; margin-bottom: 0px;}h1 span{font-size: 30px;text-transform: capitalize;}
+    img{
+        width: 100%;
+    }
+    .well{
+        color: #004c3f;
+        font-size: 25px;
+        // font-family: cursive;
+        padding: 0px 20px;
+        border-left: 3px solid #ae867a;
+        font-weight: 600;
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 50px;
+        padding-top:7px ;
+        background-color: $dark;
+        //height: 40px;
+        color: $light;
+        font-weight: 600;
+        h2{
+        a{
+            text-decoration: none;
+            font-weight: 600;font-family: 'Courier New', Courier, monospace;
+            color: inherit;
+        }
+        }
+        ul{
+            display: flex;
+            margin-top: 10px;
+            li{
+                list-style: none;
+                margin: 0px 15px;
+                font-size: 17px;
+                a{
+                    text-decoration: none;
+                    color: $light;
+                }
+            }
+        }
+    }
+    .datetime{
+        //background-color: $dark;
+        width: 600px;
+        color: $dark;
+        padding: 15px 20px;
+        border-radius: 5px;
+        // -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+        transition: 0.5s;
+        //transition-property: background, box-shadow;
+   
+        .date{
+            font-size: 25px;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 3px;
+            background-color: $dark;
+            color: $light;
+            margin-bottom: 10px;
+            padding: 10px 0px;
+        }
+        .time{
+            font-size: 60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .container-{
+                border: 3px solid $dark;
+                padding: 10px 15px;
+                transition: 0.5s;
+                transition-property: background, box-shadow;
+                &:hover{
+                    background-color: $dark;
+                    color: $light;
+                    box-shadow: 0 0 30px $dark;
+                }
+            }
+            h2{
+                font-size: 60px;
+                font-weight: 800;
+                margin-bottom: 0px;
+            }
+            h4{
+                font-size: 20px;
+                margin-bottom: 0px;
+            }
+            
+        }
+
+    }
+    .long{
+        background-color: $dark;
+        height: 108px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 20px;
+        p{
+            color: $light;
+            font-size: 15px;
+            font-family: cursive;
+            font-weight: 600;
+        }
+        
+        button{
+            border: 3px solid #fbf7ed;
+            padding: 10px 35px;
+            border-radius: 20px;
+            color: #fbf7ed;
+            margin: 20px;
+            background: transparent;
+            &:hover{
+                background-color: #fbf7ed;
+                color: $dark;
+            }
+        }
+    }
+}
+
+
+//second
+
+.secondp{
+    background-color: $dark;
+    align-items: center;
+    justify-content: center;
+    height: 120%;
+    .signssis{
+        background-image: url(/img/banner.jpg);
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+        object-fit: contain;
+        p{
+            padding-top: 200px;
+            padding-left: 60px;
+            padding-right: 60px;
+            color: $light;
+            font-size: 22px;
+            font-weight: 700;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .funcsis{height: 70vh;background-image: linear-gradient(to top, #004c3fa3, #004c3faf)}
+    }
+    .signss{
+        background-image: url(/img/injl33v9myl51.webp);
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+        object-fit: contain;
+        p{
+            padding-top: 200px;
+            padding-left: 60px;
+            padding-right: 60px;
+            color: $light;
+            font-size: 22px;
+            font-weight: 700;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .funcs{height: 70vh;background-image: linear-gradient(to top, #004c3fa3, #004c3faf)}
+    }
+    .navs{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $dark;
+        
+        &:hover{
+            background-color: $light;
+        }
+        cursor: pointer;
+        a{
+            font-weight: 600;
+            padding: 10px 40px;
+            font-size: 20px;
+            text-decoration: none;
+            margin: 0pc 10px;
+            &:hover{
+                background-color: $light;
+                transition: 0.5s;
+            }
+            color: $dark;
+        }
+        #linn{
+            background-color: $light;
+            color: $dark;
+        }
+        #linns{
+            color: $light;
+            &:hover{
+                color: $light;
+                background-color: $dark;
+                transition: 0.5s;
+            }
+        }
+    }
+    .inps{
+        padding: 100px;
+        background-color: $light;
+        height: 70vh;
+        
+        
+        input{
+            width: 100%;
+            height: 45px;
+            padding: 0px 20px;
+        }
+        label{
+            font-size: 22px;
+            margin-bottom: 7px;
+            font-weight: 600;
+            color: $dark;
+        }
+        button{
+            background-color: $dark;
+            color: $light;
+            padding: 10px 30px;
+            border-radius: 20px;
+            font-size: 20px;
+            border: none;
+            &:hover{
+                background-color: #013129;
+            }
+        }
+    }
+    .inp{
+        padding: 20px 70px;
+        background-color: $light;
+        height: 63.5vh;
+        select{width: 100%;height: 45px;}
+        input{
+            width: 100%;
+            height: 45px;
+            padding: 0px 20px;
+        }
+        label{
+            font-size: 15px;
+            margin-bottom: 7px;
+            font-weight: 600;
+            color: $dark;
+        }
+        button{
+            background-color: $dark;
+            color: $light;
+            padding: 7px 30px;
+            border-radius: 20px;
+            font-size: 20px;
+            border: none;
+            &:hover{
+                background-color: #013129;
+            }
+        }
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 50px;
+        padding-top:7px ;
+        background-color: $light;
+        //height: 40px;
+        color: $dark;
+        font-weight: 600;
+        h2{
+            a{
+                text-decoration: none;
+                font-weight: 600;font-family: 'Courier New', Courier, monospace;
+                color: inherit;
+            }
+            }
+        ul{
+            display: flex;
+            margin-top: 10px;
+            li{
+                list-style: none;
+                margin: 0px 15px;
+                font-size: 17px;
+                a{
+                    text-decoration: none;
+                    color: $dark;
+                }
+            }
+        }
+    }
+    img{
+        width: 100%;
+    }
+}
+
+//THIRD
+.textt{
+   margin-top: 50px;
+   p{
+    font-size: 25px;
+   }
+   ul li{
+    font-size: 20px;
+   }
+   h2,h3{color: #ae867a;}
+    h2 span,h3 span{
+        text-transform: uppercase;
+        color: $light;
+    }
+   
+}
+
+.third{
+    background-color: $dark;
+    color: $light;
+    .carousel {
+        align-items: center;
+      }
+      .cell1{
+        width: 25%;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        margin: 0px 10px;
+        cursor: pointer;
+        counter-increment: carousel-cell;
+        .james{
+            align-items: center;
+            text-align: center;
+            span{
+                margin-bottom: 0px;
+                font-size: 30px;
+                color: #ae867a;
+            }
+            h5{
+                font-weight: 600;
+                font-size: 25px;
+                color: #ae867a;
+            }
+        }
+        
+    }
+ 
+    .buth{
+        button{
+            width: 80%;
+            height: 70px;
+            margin-top: 20px;
+            font-size: 27px;
+            font-weight: 600;
+            
+            background-color: $light;
+            border-radius: 20px;
+            transition: 0.5s;
+            border: none;
+            transition-property: background, box-shadow;
+            &:hover{
+                background-color: $dark;
+                border: 3px solid $light;
+                color: $light;
+            }
+        }
+        span{
+            font-size: 15px;
+        }
+    }
+   
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 50px;
+        padding-top:7px ;
+        background-color: $dark;
+        //height: 40px;
+        color: $light;
+        font-weight: 600;
+        h2{
+            a{
+                text-decoration: none;
+                font-weight: 600;font-family: 'Courier New', Courier, monospace;
+                color: inherit;
+            }
+            }
+        ul{
+            display: flex;
+            margin-top: 10px;
+            li{
+                list-style: none;
+                margin: 0px 15px;
+                font-size: 17px;
+                a{
+                    text-decoration: none;
+                    color: $light;
+                }
+            }
+        }
+    }
+    img{
+        width: 100%;
+    }
+}
+
+
+////four
+
+.four{
+    background-color: $dark;
+    //background-image: url(/img/What-is-the-Best-Way-to-Collect-Payment-from-Customers.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    .modalss{display: none;}
+    img{width: 100%;}
+    // .func{ height: 100vh; background-image: linear-gradient(to top, #004c3f86, #004c3f8d)}
+    #code{
+        max-inline-size: 4;
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 50px;
+        padding-top:7px ;
+        background-color: $light;
+        //height: 40px;
+        color: $dark;
+        font-weight: 600;
+        h2{
+            a{
+                text-decoration: none;
+                font-weight: 600;font-family: 'Courier New', Courier, monospace;
+                color: inherit;
+            }
+            }
+        ul{
+            display: flex;
+            margin-top: 10px;
+            li{
+                list-style: none;
+                margin: 0px 15px;
+                font-size: 17px;
+                a{
+                    text-decoration: none;
+                    color: $dark;
+                }
+            }
+        }
+    }
+    .pay{
+        padding: 60px 100px;
+        input{
+            width: 500px;
+            height: 45px;
+            padding: 0px 20px;
+        }
+        label{
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: 500;
+            color: $light;
+        }
+        
+        button{
+            color: $light;
+            padding: 10px 30px;
+            border-radius: 10px;
+            font-size: 20px;
+            border: none;
+            width: 100%;
+            font-weight: 600;
+            margin: 20px;
+            border: 3px solid $light;
+            background-color: transparent;
+            &:hover{
+                color: $dark;
+                background-color: $light;
+            }
+        }
+    }
+}
+
+
+.models{
+    p{
+        color: $dark;
+        font-size: 22px;
+    }
+    a{
+        color: $dark;
+        padding: 10px 30px;
+        border-radius: 10px;
+        font-size: 20px;
+        border: none;
+        width: 100%;
+        font-weight: 600;
+        margin: 20px;
+        border: 3px solid $dark;
+        background-color: transparent;
+        text-decoration: none;
+        &:hover{
+            color: $light;
+            background-color: $dark;
+        }
+    }
+}
+
+
+/////fifth
+.fifth{
+    background-color: $light;
+    height: 100%;
+    .nav{
+        background-color: $dark;
+        color: $light;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 30px;
+        h2,h3{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+        }
+        p{
+            margin: 0px;
+        }
+        .time{
+            display: flex;
+            h2{
+                margin: 0px;
+                
+            }
+        }
+    }
+    .counter{
+        align-items: center;
+        text-align: center;
+        background-color: $dark;
+        color: $light;
+        font-weight: 600;
+        margin-top: 30px;
+    }
+    .center{
+        text-align: left;
+        color: $dark;
+        h3{font-weight: 600;}
+        .section{
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            cursor: pointer;
+            &:hover{
+                border: 3px solid $dark;
+            }
+            
+            p{
+                margin-top: 0px;
+                margin-left: 20px;
+                font-size: 20px;
+                margin-bottom: 0px;
+            }
+            input{
+                width: 20px;
+                height: 20px;
+                align-items: center;
+
+            }
+        }
+    }
+    .down{
+        background-color: $dark;
+        color: $light;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+        padding: 0px 50px;
+        button{
+            background-color: transparent;
+            border: none;
+            border: 3px solid $light;
+            color: $light;
+            padding: 10px 40px;
+            font-size: 20px;
+            font-weight: 600;
+            &:hover{
+                color: $dark;
+                background-color: $light;
+            }
+        }
+        p{line-height: 20px;margin-right: 5px;}
+        #namy,#nam{
+            font-size: 30px;
+            color: orange;
+        }
+        .share{
+            display: flex;
+            align-items: center;
+        }
+        img{
+            width:30%;
+        }
+    }
+}
+
+/////sixth
+.sixth{
+    background-color: $light;
+    height: 100%;
+    color: $dark;
+    nav{
+        background-color: $dark;
+        padding: 10px 30px;
+        color: $light;
+        h2{
+            font-weight: 600;
+        a{
+            text-decoration: none;
+            color: $light;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        }
+        margin-bottom: 50px;
+    }
+    img{
+        width: 100%;
+    }
+    .textts{
+        color: $dark;
+        span{
+            color: #ae867a;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        #check{
+            margin-top: 100px;
+            background-color: transparent;
+            border: none;
+            border: 3px solid $dark;
+            color: $dark;
+            padding: 10px 40px;
+            font-size: 20px;
+            font-weight: 600;
+            &:hover{
+                color: $light;
+                background-color: $dark;
+            }
+        }
+    }
+}
