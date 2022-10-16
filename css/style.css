@@ -4,22 +4,6 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.selss {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.selss input {
-  margin-right: 5px;
-}
-
 .first {
   height: 100%;
   background-color: #fbf7ed;
@@ -330,7 +314,7 @@
 }
 
 .secondp .inp {
-  padding: 20px 70px;
+  padding: 20px 100px;
   background-color: #fbf7ed;
   height: 63.5vh;
 }

@@ -1,69 +1,31 @@
 ////////////login
 // let school = document.getElementById("school")
 let btnSigns = document.getElementById("btnSigns")
-var inputs = $(".inputs")
-var email = $('#email')
-var password = $('#password')
+let noom = document.getElementById("noom")
+let emmail = document.getElementById("emmail")
 
 //let val = document.getElementById("val").innerHTML = arr.school
 
-
-function loginUser(){
-    $.ajax({
-        type:"POST",
-        url:"http://localhost:4000/api/candidate/auth/login",
-        data:{
-            "candEmail": email.val(),
-            "candPassword": password.val()
-        },
-        success:function(res){
-            console.log(res)
-            console.log(res._id)
-            if(res.error){
-                alert('Wrong Email or Password')
-            }else{
-                alert('login successful')
-                window.location.href='/show.html'
-            }
-        },
-        error:function(err){
-            console.log(err)
-        }
-    })
-}
-
-
-
 btnSigns.onclick = function(e){
     e.preventDefault()
-    
-    let input = inputs.val()
+    let noomVal = noom.value
+    let emmailVal = emmail.value
 
-   if(input == "" || input == null ){
+   if(noomVal == "" || noomVal == null || emmailVal == "" || emmailVal == null ){
      alert("Enter your candidate name")
    }else{
 
-    console.log(email.val())
-    console.log(password.val())
+    let data = localStorage.getItem('user');
+    arr = JSON.parse(data);
 
-    loginUser();
-
-    // let data = localStorage.getItem('user');
-    // arr = JSON.parse(data);
-
-    // if(noomVal == arr.number && emmailVal == arr.email){
-    //     alert(`welcome ${arr.candidate}`)
-    //     window.location.href = '/show.html'
-    //     console.log(arr.school)
-    // }else{
-    //     alert("invalid candidate details")
-    // }
+    if(noomVal == arr.number && emmailVal == arr.email){
+        alert(`welcome ${arr.candidate}`)
+        window.location.href = '/show.html'
+        console.log(arr.school)
+    }else{
+        alert("invalid candidate details")
+    }
     
     
    }
 }
-
-
-
-
-
